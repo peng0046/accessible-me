@@ -1,17 +1,40 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: white;
+  font-size: 16px;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#skipnav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#skipnav a {
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  padding: 15px 5px;
+  position: absolute;
+  top: -60px;
+  text-decoration: none;
+}
+
+#skipnav a:focus {
+  outline: 5px solid white;
+  top: 0;
+}
+
+h1 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+}
+
+h2 {
+  font-weight: bold;
 }
 
 .container {
@@ -20,15 +43,29 @@ h6 {
   padding: 0 1rem;
 }
 
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .main-nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -44,12 +81,37 @@ img {
   font-size: 1.25rem;
 }
 
+.main-nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.main-nav ul li a:focus {
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  outline: 3px solid white;
+}
+
+section {
+  padding: 20px 0;
+  text-align: left;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  gap: 10px 0;
+  flex-direction: column;
+}
+
 form input,
 form textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: .5rem 1rem;
+  font-family: Helvetica, sans-serif;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: 1px solid black;
 }
 
 form textarea {
@@ -60,12 +122,20 @@ form textarea {
 }
 
 form button {
-  background: none;
-  border: 2px solid black;
-  padding: 1rem;
+  background-color: orange;
+  color: black;
+  border: 1px solid black;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px;
 }
 
 .site-footer {
-  padding: 2rem 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: 60px;
 }
